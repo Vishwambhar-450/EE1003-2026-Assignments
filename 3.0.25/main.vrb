@@ -1,0 +1,19 @@
+\frametitle{Python Code}
+    \begin{lstlisting}
+
+plt.figure()
+for i in range(4):
+    plt.scatter([i, i], cont_vals[i])
+plt.xticks(range(4), labels)
+plt.title("Continuous Case Verification")
+plt.grid()
+
+plt.figure()
+for i in range(4):
+    plt.scatter([i, i], disc_vals[i])
+plt.xticks(range(4), labels)
+plt.title("Discrete Case Verification")
+plt.grid()
+
+plt.show()
+    \end{lstlisting}
