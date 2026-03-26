@@ -1,0 +1,17 @@
+\frametitle{Python Code}
+    \begin{lstlisting}
+# IMPULSE RESPONSE
+t, y = ctrl.impulse_response(sys_tf)
+plt.figure()
+plt.plot(t, y)
+plt.title("Impulse Response")
+plt.xlabel("Time (s)")
+plt.ylabel("ω(t)")
+plt.grid()
+
+# BODE PLOT
+plt.figure()
+ctrl.bode(sys_tf, dB=True)
+
+plt.show()
+    \end{lstlisting}
