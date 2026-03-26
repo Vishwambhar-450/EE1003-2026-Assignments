@@ -1,0 +1,15 @@
+\frametitle{Python Code}
+    \begin{lstlisting}
+plt.figure()
+plt.plot(x_vals, y_vals, label="y = x^(-x)")
+plt.scatter(x_opt, y_opt)
+plt.text(x_opt, y_opt,
+         f"Max\nx={x_opt:.3f}\ny={y_opt:.3f}")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.title("Maximization of y = x^(-x)")
+plt.legend()
+plt.grid()
+
+plt.show()
+    \end{lstlisting}
