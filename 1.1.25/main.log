@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.25)  26 MAR 2026 14:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.25)  30 MAR 2026 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1466,14 +1466,20 @@ LaTeX Font Info:    Trying to load font information for OT1+lmss on input line
 
 (/opt/texlive/2026/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (./main.aux
+
+LaTeX Warning: Label `fig:fig' multiply defined.
+
+
+LaTeX Warning: Label `fig:fig' multiply defined.
+
 )
-No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 78.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 78.
-(/opt/texlive/2026/texmf-dist/tex/latex/txfonts/omltxmi.fd
+ (/opt/texlive/2026/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 78.
@@ -1569,6 +1575,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package hyperref Info: Link coloring OFF on input line 78.
+
+(./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
@@ -1644,9 +1652,7 @@ y-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 \c@lstlisting=\count430
-
-No file main.nav.
-[1
+ (./main.nav) [1
 
 {/opt/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/opt/texlive/2
 026/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
@@ -1732,43 +1738,9 @@ LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
 
 ] [6
 
+] [7
+
 ]
-<figs/step.png, id=204, 1180.41pt x 687.31781pt>
-File: figs/step.png Graphic file (type png)
-<use figs/step.png>
-Package pdftex.def Info: figs/step.png  used on input line 161.
-(pdftex.def)             Requested size: 342.2953pt x 199.30656pt.
- [7
-
- <./figs/step.png>]
-<figs/impulse.png, id=236, 1180.41pt x 687.31781pt>
-File: figs/impulse.png Graphic file (type png)
-<use figs/impulse.png>
-Package pdftex.def Info: figs/impulse.png  used on input line 169.
-(pdftex.def)             Requested size: 342.2953pt x 199.30656pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:fig}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.169 \end{frame}
-                  [8
-
- <./figs/impulse.png>]
-<figs/bode.png, id=266, 1310.64656pt x 697.10437pt>
-File: figs/bode.png Graphic file (type png)
-<use figs/bode.png>
-Package pdftex.def Info: figs/bode.png  used on input line 177.
-(pdftex.def)             Requested size: 342.2953pt x 182.0619pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:fig}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.177 \end{frame}
-                  [9
-
- <./figs/bode.png>]
 \openout4 = `main.vrb'.
 
  (./main.vrb
@@ -1785,7 +1757,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 print("
+l.17 print("
             Transfer Function:")
 ? 
 
@@ -1795,96 +1767,36 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 print("Transfer Function:"
+l.17 print("Transfer Function:"
                                )
 ? 
-) [10
+) [8
 
 {/opt/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}]
+<figs/results.png, id=264, 432.11438pt x 183.68625pt>
+File: figs/results.png Graphic file (type png)
+<use figs/results.png>
+Package pdftex.def Info: figs/results.png  used on input line 194.
+(pdftex.def)             Requested size: 342.2953pt x 145.51132pt.
+ [9
+
+ <./figs/results.png>]
 \openout4 = `main.vrb'.
 
- (./main.vrb
+ (./main.vrb)
+Overfull \vbox (49.72923pt too high) detected at line 222
+ []
 
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+[10
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 plt.title("
-               Step Response (Ï‰ / u)")
-? 
+]
+\openout4 = `main.vrb'.
 
-! LaTeX Error: Invalid UTF-8 byte sequence (Ï\lst@EC‰).
+ (./main.vrb)
+Overfull \vbox (145.72923pt too high) detected at line 258
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 plt.title("Step Response (Ï‰ 
-                                 / u)")
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 plt.title("Step Response (Ï‰ / u)"
-                                      )
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 plt.xlabel("
-                Time (s)")
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 plt.xlabel("Time (s)"
-                         )
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 plt.ylabel("
-                Ï‰(t)")
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (Ï\lst@EC‰).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 plt.ylabel("Ï‰(
-                   t)")
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 plt.ylabel("Ï‰(t)"
-                      )
-? 
-) [11
+[11
 
 ]
 \openout4 = `main.vrb'.
@@ -1897,8 +1809,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7 plt.title("
-               Impulse Response")
+l.11 print("
+            Laplace Transform Output Equation:")
 ? 
 
 ! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
@@ -1907,8 +1819,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7 plt.title("Impulse Response"
-                                )
+l.11 print("Laplace Transform Output Equation:"
+                                               )
 ? 
 
 ! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
@@ -1917,8 +1829,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8 plt.xlabel("
-                Time (s)")
+l.12 print(f"
+             y_L(t) = {A_L:.4f} sin({omega:.4f} t {phi_L:+.4f})")
 ? 
 
 ! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
@@ -1927,42 +1839,94 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8 plt.xlabel("Time (s)"
-                         )
+l.12 ...{A_L:.4f} sin({omega:.4f} t {phi_L:+.4f})"
+                                                  )
 ? 
+)
+Overfull \vbox (25.72923pt too high) detected at line 284
+ []
 
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 plt.ylabel("
-                Ï‰(t)")
-? 
-
-! LaTeX Error: Invalid UTF-8 byte sequence (Ï\lst@EC‰).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 plt.ylabel("Ï‰(
-                   t)")
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 plt.ylabel("Ï‰(t)"
-                      )
-? 
-) [12
+[12
 
 ]
+\openout4 = `main.vrb'.
+
+ (./main.vrb
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 print("
+           \nRK4 Approximate Output Equation:")
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 print("\nRK4 Approximate Output Equation:"
+                                              )
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 print(f"
+            y_RK4(t) = {A_R:.4f} sin({omega:.4f} t {phi_R:+.4f})")
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ... {A_R:.4f} sin({omega:.4f} t {phi_R:+.4f})"
+                                                  )
+? 
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
+10.
+(/opt/texlive/2026/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) [13
+
+{/opt/texlive/2026/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+<figs/PLOT.png, id=408, 1220.30907pt x 712.16063pt>
+File: figs/PLOT.png Graphic file (type png)
+<use figs/PLOT.png>
+Package pdftex.def Info: figs/PLOT.png  used on input line 314.
+(pdftex.def)             Requested size: 342.2953pt x 199.7622pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:fig}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.314 \end{frame}
+                  [14
+
+ <./figs/PLOT.png>]
+<figs/output.png, id=437, 389.95688pt x 155.83218pt>
+File: figs/output.png Graphic file (type png)
+<use figs/output.png>
+Package pdftex.def Info: figs/output.png  used on input line 322.
+(pdftex.def)             Requested size: 342.2953pt x 136.79033pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:fig}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.322 \end{frame}
+                  [15
+
+ <./figs/output.png>]
 \tf@nav=\write7
 \openout7 = `main.nav'.
 
@@ -1972,6 +1936,9 @@ l.9 plt.ylabel("Ï‰(t)"
 \tf@snm=\write9
 \openout9 = `main.snm'.
 
+runsystem(latexminted cleantemp  --timestamp 20260330145736 FAD58DE7366495DB465
+0CFEFAC2FCD61)...executed safely (allowed).
+
  (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
@@ -1979,25 +1946,19 @@ L3 programming layer <2020/03/25>
  ***********
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 60055 strings out of 467525
- 1464566 string characters out of 5391584
- 2515922 words of memory out of 5000000
- 87972 multiletter control sequences out of 15000+600000
- 669083 words of font info for 81 fonts, out of 8000000 for 9000
+ 60302 strings out of 467525
+ 1467192 string characters out of 5391584
+ 2817922 words of memory out of 5000000
+ 88196 multiletter control sequences out of 15000+600000
+ 669388 words of font info for 82 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 128i,15n,123p,1172b,1285s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,123p,1172b,1468s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/2026/texmf-dist/fonts/type1/public/lm/lmex10.pfb></opt/texlive/
 2026/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></opt/texlive/2026/texmf-dist/
 fonts/type1/public/lm/lmmi8.pfb></opt/texlive/2026/texmf-dist/fonts/type1/publi
@@ -2008,10 +1969,10 @@ onts/type1/public/lm/lmsso10.pfb></opt/texlive/2026/texmf-dist/fonts/type1/publ
 ic/lm/lmsso8.pfb></opt/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 ></opt/texlive/2026/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></opt/texlive/20
 26/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (12 pages, 347913 bytes).
+Output written on main.pdf (15 pages, 383914 bytes).
 PDF statistics:
- 443 PDF objects out of 1000 (max. 8388607)
- 366 compressed objects within 4 object streams
- 26 named destinations out of 1000 (max. 500000)
+ 533 PDF objects out of 1000 (max. 8388607)
+ 446 compressed objects within 5 object streams
+ 32 named destinations out of 1000 (max. 500000)
  100 words of extra memory for PDF output out of 10000 (max. 10000000)
 

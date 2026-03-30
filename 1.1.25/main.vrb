@@ -1,17 +1,19 @@
-\frametitle{Python Code}
+\frametitle{Comparing Final Output}
     \begin{lstlisting}
-# IMPULSE RESPONSE
-t, y = ctrl.impulse_response(sys_tf)
-plt.figure()
-plt.plot(t, y)
-plt.title("Impulse Response")
-plt.xlabel("Time (s)")
-plt.ylabel("ω(t)")
-plt.grid()
+phi_R = np.pi/2 - omega * t_peak
 
-# BODE PLOT
-plt.figure()
-ctrl.bode(sys_tf, dB=True)
+print("\nRK4 Approximate Output Equation:")
+print(f"y_RK4(t) = {A_R:.4f} sin({omega:.4f} t {phi_R:+.4f})")
 
+# Plot comparison
+plt.figure(figsize=(10,5))
+plt.plot(t_tf, y_tf, label='Laplace / Transfer Function')
+plt.plot(t, y_rk4, '--', label='RK4 Solution')
+plt.plot(t, u, alpha=0.4, label='Input')
+plt.xlabel('Time (s)')
+plt.ylabel('Amplitude')
+plt.title('Laplace vs RK4 Verification')
+plt.grid(True)
+plt.legend()
 plt.show()
     \end{lstlisting}
