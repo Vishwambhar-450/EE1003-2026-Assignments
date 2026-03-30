@@ -15,23 +15,40 @@ def analyze(X, Y, title):
     var_sum = np.var(X + Y)
     EX2Y2 = np.mean((X**2) * (Y**2))
 
-    print(f"\n--- {title} ---")
-    print("1. E(XY) vs E(X)E(Y):", EXY, EX * EY)
-    print("2. Cov(X,Y):", cov)
-    print("3. Var(X+Y) vs Var(X)+Var(Y):", var_sum, varX + varY)
-    print("4. E(X^2 Y^2) vs (E(X))^2 (E(Y))^2:", EX2Y2, (EX**2)*(EY**2))
+    print(f"\n================ {title} ================")
+
+    print("\n--- Option 1: E(XY) vs E(X)E(Y) ---")
+    print(f"E(XY)        = {EXY:.2f}")
+    print(f"E(X)E(Y)     = {EX * EY:.2f}")
+
+    print("\n--- Option 2: Cov(X,Y) ---")
+    print(f"Cov(X,Y)     = {cov:.2f} (should be ~0 if independent)")
+
+    print("\n--- Option 3: Var(X+Y) vs Var(X)+Var(Y) ---")
+    print(f"Var(X+Y)     = {var_sum:.2f}")
+    print(f"Var(X)+Var(Y)= {varX + varY:.2f}")
+
+    print("\n--- Option 4: E(X^2 Y^2) vs (E(X))^2 (E(Y))^2 ---")
+    print(f"E(X^2 Y^2)   = {EX2Y2:.2f}")
+    print(f"(E(X))^2(E(Y))^2 = {(EX**2)*(EY**2):.2f}")
 
     return EXY, EX*EY, cov, var_sum, varX+varY, EX2Y2, (EX**2)*(EY**2)
 
-# CONTINUOUS CASE (PDF)
-mux = np.random.randint(1, 5, 1)
-muy = np.random.randint(1, 5, 1)
+
+# ================= CONTINUOUS CASE =================
+mux = np.random.randint(1, 5)
+muy = np.random.randint(1, 5)
+
+print(f"mux = {mux}")
+print(f"muy = {muy}")
+
+
 Xc = np.random.normal(mux, 1, N)
 Yc = np.random.normal(muy, 1, N)
 
 results_cont = analyze(Xc, Yc, "Continuous Case")
 
-# Estimate PDFs using KDE
+# KDE PDFs
 kde_X = gaussian_kde(Xc)
 kde_Y = gaussian_kde(Yc)
 
@@ -44,34 +61,8 @@ plt.title("Estimated PDFs (Continuous Case)")
 plt.legend()
 plt.grid()
 
-# DISCRETE CASE (PMF)
-Xd = np.random.randint(1, 7, N)
-Yd = np.random.randint(1, 7, N)
+labels = ["Option 1", "Option 2", "Option 3", "Option 4"]
 
-results_disc = analyze(Xd, Yd, "Discrete Case")
-
-# Compute PMFs
-values_X, counts_X = np.unique(Xd, return_counts=True)
-pmf_X = counts_X / N
-
-values_Y, counts_Y = np.unique(Yd, return_counts=True)
-pmf_Y = counts_Y / N
-
-plt.figure()
-plt.stem(values_X, pmf_X, label="PMF of X", basefmt=" ")
-plt.stem(values_Y, pmf_Y, linefmt='r-', markerfmt='ro', label="PMF of Y", basefmt=" ")
-plt.title("PMFs (Discrete Case)")
-plt.legend()
-plt.grid()
-
-labels = [
-    "Option 1",
-    "Option 2",
-    "Option 3",
-    "Option 4"
-]
-
-# Continuous
 cont_vals = [
     [results_cont[0], results_cont[1]],
     [results_cont[2], 0],
@@ -79,26 +70,11 @@ cont_vals = [
     [results_cont[5], results_cont[6]]
 ]
 
-# Discrete
-disc_vals = [
-    [results_disc[0], results_disc[1]],
-    [results_disc[2], 0],
-    [results_disc[3], results_disc[4]],
-    [results_disc[5], results_disc[6]]
-]
-
 plt.figure()
 for i in range(4):
     plt.scatter([i, i], cont_vals[i])
 plt.xticks(range(4), labels)
 plt.title("Continuous Case Verification")
-plt.grid()
-
-plt.figure()
-for i in range(4):
-    plt.scatter([i, i], disc_vals[i])
-plt.xticks(range(4), labels)
-plt.title("Discrete Case Verification")
 plt.grid()
 
 plt.show()
